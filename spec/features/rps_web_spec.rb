@@ -22,4 +22,11 @@ feature 'playing the game' do
     expect(page).to have_button('Paper')
     expect(page).to have_button('Scissors')
   end
+
+  scenario 'player chooses one option' do
+    visit('/registered')
+    click_button('Rock')
+    expect(page).to have_content('Rock vs...')
+  end
+
 end
