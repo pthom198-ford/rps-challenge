@@ -13,5 +13,9 @@ post '/registered' do
   erb :register
   end
 
+  get '/registered' do
+  erb :options
+   end
+
   run! if app_file == $0
 end
