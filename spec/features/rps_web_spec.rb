@@ -14,3 +14,12 @@ feature 'Registering name' do
     expect(page).to have_content('Piers')
   end
 end
+
+feature 'playing the game' do
+  scenario 'present choices to player' do
+    visit('/registered')
+    expect(page).to have_content('Rock')
+    expect(page).to have_content('Paper')
+    expect(page).to have_content('Scissors')
+  end
+end
