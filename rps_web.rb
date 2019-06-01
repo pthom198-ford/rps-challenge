@@ -17,5 +17,10 @@ post '/registered' do
   erb :options
    end
 
+post '/play' do
+  "Rock vs..."
+  # erb :match
+end
+
   run! if app_file == $0
 end
