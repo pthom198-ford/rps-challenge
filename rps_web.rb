@@ -22,5 +22,10 @@ post '/play' do
   # erb :match
 end
 
+# get '/attack' do
+#   @user_name = params[:user_name]
+#   erb :attack
+# end
+
   run! if app_file == $0
 end
