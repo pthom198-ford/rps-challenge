@@ -18,8 +18,15 @@ post '/registered' do
    end
 
 post '/play' do
-  "Rock vs..."
-  # erb :match
+  @game = Game.new
+  @game.player(params[:user_input])
+ @userinput = @game.player_choice
+ @output = @game.choice
+ @result = @game.outcome
+ p @userinput
+ p @output
+ p @result
+ erb :result
 end
 
 # get '/attack' do
